@@ -38,4 +38,10 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+
+  # defined default url options in your environments files
+  # devise install instruction 1
+  # NEED TO ADD ACTUAL HOST URL 
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end
